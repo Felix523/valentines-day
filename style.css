@@ -1,5 +1,4 @@
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -219,7 +218,7 @@ a {
   }
   .photo-collage {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
   .photo {
@@ -227,4 +226,12 @@ a {
     height: auto;
     aspect-ratio: 1/1;
   }
+}
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(-300vh) rotate(360deg);
+    }
 }
