@@ -6,6 +6,14 @@ body {
   background-color: #fce4ec;
   color: #333;
   position: relative;
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 @media (max-width: 768px) {
   html {
@@ -21,18 +29,12 @@ body {
   }
   .message {
     font-size: 1.3em;
-    font-weight: 500;
+    margin: 0 10px;
     color: #d32f2f;
   }
   .letter {
-    font-family: "Playfair Display", serif;
     font-size: 1.1em;
-    font-style: italic;
-    color: #c2185b;
-    text-align: center;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
+    margin: 0 20px;
   }
   .main {
     margin: 20px 10px;
@@ -65,8 +67,8 @@ body {
     gap: 10px;
   }
   .photo {
-    width: 100%;
-    max-width: 400px;
+    width: 90%;
+    max-width: 300px;
     height: auto;
   }
 }
@@ -114,7 +116,7 @@ a {
 .photo {
   width: 10.5vw;
   height: 10.5vw;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
