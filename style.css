@@ -15,68 +15,6 @@ body {
   align-items: center;
   flex-direction: column;
 }
-@media (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
-  h1 {
-    font-size: 2.5em;
-    margin-top: 50px;
-  }
-  h2 {
-    font-size: 2em;
-    margin-top: 40px;
-  }
-  .message {
-    font-size: 1.3em;
-    font-weight: 500;
-    color: #d32f2f;
-  }
-  .letter {
-    font-family: "Playfair Display", serif;
-    font-size: 1.1em;
-    font-style: italic;
-    color: #c2185b;
-    text-align: center;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  .main {
-    margin: 20px 10px;
-  }
-
-  .love-letter {
-    margin: 20px 10px;
-  }
-
-  .letter {
-    margin: 0 20px;
-  }
-  .heart {
-    width: 20px;
-    height: 20px;
-  }
-  .heart1,
-  .heart2,
-  .heart3,
-  .heart4,
-  .heart5,
-  .heart6,
-  .heart7,
-  .heart8 {
-    animation-duration: 10s;
-    animation-delay: 0s;
-  }
-  .photo-collage {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .photo {
-    width: 100%;
-    height: auto;
-  }
-}
 h1,
 h2 {
   font-family: "Georgia", sans-serif;
@@ -117,6 +55,7 @@ a {
   justify-content: center;
   gap: 20px;
   margin-bottom: 20px;
+  grid-template-columns: repeat(6, 1fr);
 }
 .photo {
   width: 10.5vw;
@@ -227,5 +166,71 @@ a {
   }
   100% {
     transform: translateY(-150vh) rotate(360deg);
+  }
+}
+
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 2.5em;
+    margin-top: 50px;
+  }
+  h2 {
+    font-size: 2em;
+    margin-top: 40px;
+  }
+  .message {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #d32f2f;
+  }
+  .letter {
+    font-family: "Playfair Display", serif;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #c2185b;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .main {
+    margin: 20px 10px;
+  }
+
+  .love-letter {
+    margin: 20px 10px;
+  }
+
+  .letter {
+    margin: 0 20px;
+  }
+  .heart {
+    width: 20px;
+    height: 20px;
+  }
+  .heart1,
+  .heart2,
+  .heart3,
+  .heart4,
+  .heart5,
+  .heart6,
+  .heart7,
+  .heart8 {
+    animation-duration: 10s;
+    animation-delay: 0s;
+  }
+  .photo-collage {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    flex-direction: column;
+    gap: 10px;
+  }
+  .photo {
+    width: 100%;
+    height: auto;
   }
 }
