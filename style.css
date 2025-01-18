@@ -3,7 +3,6 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: "Poppins", sans-serif;
   background-color: #fce4ec;
@@ -214,20 +213,9 @@ a {
     width: 20px;
     height: 20px;
   }
-  .heart1,
-  .heart2,
-  .heart3,
-  .heart4,
-  .heart5,
-  .heart6,
-  .heart7,
-  .heart8 {
-    animation-duration: 10s;
-    animation-delay: 0s;
-  }
   .photo-collage {
     display: grid;
-    flex-direction: row;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 10px;
   }
   .photo {
