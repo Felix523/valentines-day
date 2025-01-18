@@ -214,16 +214,16 @@ a {
     margin: 0 20px;
   }
   .heart {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
   }
   /* Creating the heart using ::before and ::after */
   .heart::before,
   .heart::after {
     content: "";
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background-color: red;
     border-radius: 50%;
     visibility: visible;
@@ -232,12 +232,11 @@ a {
   /* Position the two "lobes" of the heart */
   .heart::before {
     left: 0;
-    top: -10px;
+    top: -7.5px;
   }
-
   .heart::after {
     top: 0;
-    left: -10px;
+    left: -7.5px;
   }
   .photo-collage {
     display: grid;
@@ -245,7 +244,7 @@ a {
     gap: 10px;
   }
   .photo {
-    width: 100%;
+    width: 100%;  
     height: auto;
     aspect-ratio: 1/1;
   }
