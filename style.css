@@ -29,12 +29,18 @@ body {
   }
   .message {
     font-size: 1.3em;
-    margin: 0 10px;
+    font-weight: 500;
     color: #d32f2f;
   }
   .letter {
+    font-family: "Playfair Display", serif;
     font-size: 1.1em;
-    margin: 0 20px;
+    font-style: italic;
+    color: #c2185b;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
   }
   .main {
     margin: 20px 10px;
@@ -67,8 +73,7 @@ body {
     gap: 10px;
   }
   .photo {
-    width: 90%;
-    max-width: 300px;
+    width: 100%;
     height: auto;
   }
 }
@@ -116,7 +121,7 @@ a {
 .photo {
   width: 10.5vw;
   height: 10.5vw;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
