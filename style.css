@@ -180,10 +180,14 @@ a {
   h1 {
     font-size: 2.5em;
     margin-top: 50px;
+    text-align: center;
+    color: #d32f2f;
   }
   h2 {
     font-size: 2em;
     margin-top: 40px;
+    text-align: center;
+    color: #d32f2f;
   }
   .message {
     font-size: 1.3em;
