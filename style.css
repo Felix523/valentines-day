@@ -49,7 +49,6 @@ body {
     width: 20px;
     height: 20px;
   }
-
   .heart1,
   .heart2,
   .heart3,
@@ -60,6 +59,15 @@ body {
   .heart8 {
     animation-duration: 10s;
     animation-delay: 0s;
+  }
+  .photo-collage {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
   }
 }
 h1,
@@ -104,15 +112,11 @@ a {
   margin-bottom: 20px;
 }
 .photo {
-  width: 40vw;
-  height: 40vw;
-  max-width: 200px;
+  width: 10.5vw;
+  height: 10.5vw;
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
-}
-.photo:hover {
-  transform: scale(1.2);
 }
 .message {
   font-size: 1.3em;
